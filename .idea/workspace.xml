@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/token.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="First &quot;working&quot; build">
       <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +59,16 @@
       <option name="presentableId" value="Default" />
       <updated>1666609609860</updated>
       <workItem from="1666613096819" duration="189000" />
-      <workItem from="1666613299363" duration="3273000" />
+      <workItem from="1666613299363" duration="3420000" />
     </task>
+    <task id="LOCAL-00001" summary="First &quot;working&quot; build">
+      <created>1666616634013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666616634013</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,5 +87,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First &quot;working&quot; build" />
+    <option name="LAST_COMMIT_MESSAGE" value="First &quot;working&quot; build" />
   </component>
 </project>

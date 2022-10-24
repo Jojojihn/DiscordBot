@@ -14,7 +14,7 @@ public class main {
         JDA bot = JDABuilder.createDefault(token).build();
         Presence presence = bot.getPresence();
         presence.setActivity(Activity.watching("you"));
-
+        //Test
 
 
     }
