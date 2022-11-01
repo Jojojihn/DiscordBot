@@ -1,3 +1,5 @@
+package mainStuff;
+
 import input.ListeningBoi;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -9,15 +11,21 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class main {
+public class Bot {
+    static JDA bot;
     public static void main(String[] args) throws Exception {
-        URL tokenUrl = main.class.getResource("/token.txt");
+        URL tokenUrl = Bot.class.getResource("/token.txt");
         String token = Files.readString(Paths.get(tokenUrl.toURI()));
-        JDA bot = JDABuilder.createDefault(token, GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MESSAGE_REACTIONS)
+        bot = JDABuilder.createDefault(token, GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MESSAGE_REACTIONS)
                 .addEventListeners(new ListeningBoi())
                 .build();
         Presence presence = bot.getPresence();
         presence.setActivity(Activity.listening("to your commands"));
         bot.awaitReady();
     }
+
+    public static void updateStatus(String status){
+        bot.getPresence().setActivity(Activity.of(Activity.ActivityType.PLAYING, status));
+    }
+
 }
