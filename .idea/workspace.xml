@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="First &quot;working&quot; build">
-      <change afterPath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Some minor updates">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commandStuff/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commandStuff/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +82,7 @@
       <workItem from="1666620018119" duration="3668000" />
       <workItem from="1667262464236" duration="4545000" />
       <workItem from="1667375669471" duration="6520000" />
-      <workItem from="1667385213387" duration="701000" />
+      <workItem from="1667385213387" duration="1072000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -117,7 +112,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666616845028</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Some minor updates">
+      <created>1667385932879</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667385932879</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Some minor updates">
+      <created>1667385950562</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667385950562</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Some minor updates">
+      <created>1667386074069</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667386074069</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Some minor updates">
+      <created>1667386197108</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667386197108</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +160,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First &quot;working&quot; build" />
-    <option name="LAST_COMMIT_MESSAGE" value="First &quot;working&quot; build" />
+    <MESSAGE value="Some minor updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some minor updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
