@@ -22,7 +22,7 @@ public class CommandManager {
                                                     "▀(@)▀▀▀▀▀▀▀(@)(@)▀▀▀▀▀▀▀▀▀▀▀▀▀\u200B▀▀▀▀(@)▀").queue();
             }
             default -> {
-                event.getChannel().sendMessage("UwU. I am sorry, I dont know what you mean :sob:").queue();
+                event.getChannel().sendMessage("UwU. I am sowwy, I dont know what you mean :sob:").queue();
             }
         }
     }
