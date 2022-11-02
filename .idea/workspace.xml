@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Some minor updates">
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Fixed maven">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,7 @@
       <workItem from="1666620018119" duration="3668000" />
       <workItem from="1667262464236" duration="4545000" />
       <workItem from="1667375669471" duration="6520000" />
-      <workItem from="1667385213387" duration="1072000" />
+      <workItem from="1667385213387" duration="1430000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -140,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667386197108</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Some minor updates">
+      <created>1667386291820</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667386291820</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed maven">
+      <created>1667386510125</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667386510125</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +175,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First &quot;working&quot; build" />
     <MESSAGE value="Some minor updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some minor updates" />
+    <MESSAGE value="Fixed maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed maven" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
