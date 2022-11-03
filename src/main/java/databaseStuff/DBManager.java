@@ -1,9 +1,6 @@
 package databaseStuff;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class DBManager {
     Connection conn = null;
@@ -23,8 +20,17 @@ public class DBManager {
     }
 
     public void sendSQL(String sql) throws SQLException {
-        Statement stmt = conn.createStatement();
-        stmt.execute(sql);
+        Statement statement = conn.createStatement();
+        statement.execute(sql);
     }
 
+    public ResultSet sendSQLwithResult(String sql) throws SQLException{
+        Statement statement = conn.createStatement();
+        ResultSet result = statement.executeQuery(sql);
+        return result;
+    }
+
+    public void disconnect() throws SQLException{
+        conn.close();
+    }
 }
