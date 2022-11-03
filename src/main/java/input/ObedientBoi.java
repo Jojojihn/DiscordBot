@@ -48,7 +48,7 @@ public class ObedientBoi extends ListenerAdapter {
                 }
                 try {
                     if (rs.getString(1) == null) {
-                        dbManager.sendSQL("INSERT INTO users (id, name nickname, currency) VALUES ('" + event.getMember().getId() + "'" + event.getMember().getEffectiveName() + "'" + "', ' User ', '0')");
+                        dbManager.sendSQL("INSERT INTO users (id, name, nickname, currency) VALUES ('" + event.getMember().getId() + "' ," + "'" + event.getMember().getEffectiveName() + "', ' User ', '0')");
                     }
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
@@ -61,7 +61,7 @@ public class ObedientBoi extends ListenerAdapter {
                                 Button.secondary("mommy", "Mommy"),
                                 Button.secondary("master", "Master"),
                                 Button.secondary("baby", "Baby"),
-                                Button.secondary("user", "User"))
+                                Button.secondary("custom", "Custom"))
                         .queue();
 
             } catch (SQLException e) {
