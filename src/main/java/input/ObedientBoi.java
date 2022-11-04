@@ -3,11 +3,8 @@ package input;
 import databaseStuff.DBManager;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.interactions.components.ActionRow;
 import net.dv8tion.jda.api.interactions.components.buttons.Button;
-import net.dv8tion.jda.api.interactions.components.text.TextInput;
-import net.dv8tion.jda.api.interactions.components.text.TextInputStyle;
-import net.dv8tion.jda.api.interactions.modals.Modal;
+import util.UsefulFunctions;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,24 +15,17 @@ public class ObedientBoi extends ListenerAdapter {
         if (event.getName().equals("ping")) {
             event.reply("Pong!").queue();
         } else if (event.getName().equals("help")) {
-            event.reply("I'll do my best to help :)").queue();
+            if (event.getMember().getEffectiveName().equals("Big Boy")) {
+                event.reply("I'll do my best to help Small Boy :)").queue();
+            } else {
+                String nick = UsefulFunctions.getNick(event.getMember().getId());
+                event.reply("I'll do my best to help " + nick + " :)").queue();
+            }
         } else if (event.getName().equals("gaypyorn")) {
             event.getChannel().sendMessage("──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\u200B▀▀▀▀▀▀▌\n" +
                     "───▄▄██▌█ beep beep ▄▄▄▌▐██▌█ gay porn delivery\n" +
                     "███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\u200B▄▄▄▄▄▄▌\n" +
                     "▀(@)▀▀▀▀▀▀▀(@)(@)▀▀▀▀▀▀▀▀▀▀▀▀▀\u200B▀▀▀▀(@)▀").queue();
-        } else if (event.getName().equals("bot")) {
-            TextInput subject = TextInput.create("subject", "What do you want me to do?", TextInputStyle.SHORT)
-                    .setPlaceholder("I'll be a good bot, I'll do anything for you master")
-                    .setMinLength(10)
-                    .setMaxLength(100) // or setRequiredRange(10, 100)
-                    .build();
-
-            Modal modal = Modal.create("modmail", "Im an obedient Bot UwU")
-                    .addActionRows(ActionRow.of(subject))
-                    .build();
-
-            event.replyModal(modal).queue();
         } else if (event.getName().equals("callme")) {
             DBManager dbManager = new DBManager();
             ResultSet rs;
@@ -53,9 +43,9 @@ public class ObedientBoi extends ListenerAdapter {
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
-                rs = dbManager.sendSQLwithResult("SELECT * FROM users WHERE id = '" + event.getMember().getId() + "'");
-                String nickname = rs.getString("nickname");
+                String nickname = UsefulFunctions.getNick(event.getMember().getId());
                 event.reply("What do you want me to call you, " + nickname + "?")
+                        .setEphemeral(true)
                         .addActionRow(
                                 Button.secondary("daddy", "Daddy"),
                                 Button.secondary("mommy", "Mommy"),
@@ -63,16 +53,10 @@ public class ObedientBoi extends ListenerAdapter {
                                 Button.secondary("baby", "Baby"),
                                 Button.secondary("custom", "Custom"))
                         .queue();
-
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-            try {
                 dbManager.disconnect();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-
         }
     }
 }

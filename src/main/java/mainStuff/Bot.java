@@ -55,7 +55,6 @@ public class Bot {
                     Commands.slash("ping", "Pong"),
                     Commands.slash("help", "I'll do my best to help :)"),
                     Commands.slash("gayporn", "It's a secret"),
-                    Commands.slash("bot", "I'll do whatever you ask for"),
                     Commands.slash("callme", "Tell me how to talk to you")
             ).queue();
         }

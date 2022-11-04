@@ -24,8 +24,6 @@ public class ButtonBoi extends ListenerAdapter {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-
-            event.getMessage().delete().queue();
         }else if (event.getComponentId().equals("mommy")) {
             try {
                 DBManager dbManager = new DBManager();
@@ -35,8 +33,6 @@ public class ButtonBoi extends ListenerAdapter {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-
-            event.getMessage().delete().queue();
         }else if (event.getComponentId().equals("master")) {
             try {
                 DBManager dbManager = new DBManager();
@@ -46,8 +42,6 @@ public class ButtonBoi extends ListenerAdapter {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-
-            event.getMessage().delete().queue();
         }else if (event.getComponentId().equals("baby")) {
             try {
                 DBManager dbManager = new DBManager();
@@ -57,8 +51,6 @@ public class ButtonBoi extends ListenerAdapter {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-
-            event.getMessage().delete().queue();
         }else if (event.getComponentId().equals("custom")) {
             TextInput nickname = TextInput.create("nickname", "What Nickname do you want?", TextInputStyle.SHORT)
                     .setPlaceholder("Please choose a horny one. UwU")
@@ -78,7 +70,6 @@ public class ButtonBoi extends ListenerAdapter {
                 DBManager dbManager = new DBManager();
                 dbManager.connect();
                 dbManager.sendSQL("UPDATE users SET nickname = '"+nick+"' WHERE id = " + event.getUser().getId());
-                event.getMessage().delete().queue();
                 event.reply("Alright "+nick).setEphemeral(true).queue();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
