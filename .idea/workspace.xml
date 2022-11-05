@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Fixed typos" />
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Trying to fix maven">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +87,7 @@
       <workItem from="1667469125905" duration="2965000" />
       <workItem from="1667486054748" duration="4503000" />
       <workItem from="1667589145573" duration="839000" />
-      <workItem from="1667656995701" duration="525000" />
+      <workItem from="1667656995701" duration="954000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -177,7 +180,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667657067366</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Trying to fix maven">
+      <created>1667657556863</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667657556863</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Trying to fix maven">
+      <created>1667657663496</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667657663496</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Trying to fix maven">
+      <created>1667657754961</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1667657754961</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +225,8 @@
     <MESSAGE value="Fixed maven" />
     <MESSAGE value="Finished the callme" />
     <MESSAGE value="Fixed typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed typos" />
+    <MESSAGE value="Trying to fix maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix maven" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
