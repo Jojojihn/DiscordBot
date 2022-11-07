@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Trying to fix maven">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +87,8 @@
       <workItem from="1667486054748" duration="4503000" />
       <workItem from="1667589145573" duration="839000" />
       <workItem from="1667656995701" duration="1067000" />
+      <workItem from="1667825644363" duration="848000" />
+      <workItem from="1667828479677" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>

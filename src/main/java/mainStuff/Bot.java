@@ -24,6 +24,7 @@ public class Bot {
         DBManager dbManager = new DBManager();
         dbManager.connect();
         URL tokenUrl = Bot.class.getResource("/token.txt");
+        assert tokenUrl != null;
         String token = Files.readString(Paths.get(tokenUrl.toURI()));
         bot = JDABuilder.createDefault(token, GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MESSAGE_REACTIONS)
                 .addEventListeners(new ListeningBoi())
