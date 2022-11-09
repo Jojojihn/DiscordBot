@@ -13,6 +13,9 @@ import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.managers.Presence;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Bot {
@@ -20,9 +23,9 @@ public class Bot {
     public static void main(String[] args) throws Exception {
         DBManager dbManager = new DBManager();
         dbManager.connect();
-        //URL tokenUrl = Bot.class.getResource("/token.txt");
-        //assert tokenUrl != null;
-        String token = System.getenv("TokenDiscordBotYoMama");//Files.readString(Paths.get(tokenUrl.toURI()));
+        URL tokenUrl = Bot.class.getResource("/token.txt");
+        assert tokenUrl != null;
+        String token = Files.readString(Paths.get(tokenUrl.toURI()));
         bot = JDABuilder.createDefault(token, GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MESSAGE_REACTIONS)
                 .addEventListeners(new ListeningBoi())
                 .addEventListeners(new ObedientBoi())
