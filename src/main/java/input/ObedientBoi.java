@@ -22,11 +22,7 @@ public class ObedientBoi extends ListenerAdapter {
                 event.reply("I'll do my best to help " + nick + " :)").queue();
             }
         } else if (event.getName().equals("gayporn")) {
-            event.getChannel().sendMessage("""
-                    ──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\u200B▀▀▀▀▀▀▌
-                    ───▄▄██▌█ beep beep ▄▄▄▌▐██▌█ gay porn delivery
-                    ███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\u200B▄▄▄▄▄▄▌
-                    ▀(@)▀▀▀▀▀▀▀(@)(@)▀▀▀▀▀▀▀▀▀▀▀▀▀\u200B▀▀▀▀(@)▀""").queue();
+            event.getChannel().sendMessage("Amogus").queue();
         } else if (event.getName().equals("callme")) {
             DBManager dbManager = new DBManager();
             ResultSet rs;

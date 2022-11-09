@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Fixed all warnings">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Still working on fixing maven" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +87,7 @@
       <workItem from="1667656995701" duration="1067000" />
       <workItem from="1667825644363" duration="848000" />
       <workItem from="1667828479677" duration="858000" />
-      <workItem from="1667994388019" duration="292000" />
+      <workItem from="1667994388019" duration="364000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -218,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667831840803</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Still working on fixing maven">
+      <created>1667994691292</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667994691292</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +248,8 @@
     <MESSAGE value="Fixed typos" />
     <MESSAGE value="Trying to fix maven" />
     <MESSAGE value="Fixed all warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed all warnings" />
+    <MESSAGE value="Still working on fixing maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Still working on fixing maven" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
