@@ -7,18 +7,21 @@ public class CommandManager {
         String command = args[1];
         command = command.toLowerCase();
         switch (command) {
-            case "help" -> {
+            case "help": {
                 event.getChannel().sendMessage("I'll do my best to help :)").queue();
+                break;
             }
-            case "amogus" -> {
+            case "amogus": {
                 for(int i =0; i < 10; i++){
                     event.getChannel().sendMessage("Gusgus").queue();
                 }
+                break;
             }
-            case "gayporn" -> {
+            case "gayporn": {
                 event.getChannel().sendMessage("amogus").queue();
+                break;
             }
-            default -> {
+            default: {
                 event.getChannel().sendMessage("UwU. I am sowwy, I dont know what you mean :sob:").queue();
             }
         }
