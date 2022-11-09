@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Still working on fixing maven" />
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Undid maven fixes, I know where the problem lies, I can fix it via making maven use newer java.&#10;This way the code is nicer though.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commandStuff/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commandStuff/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +91,7 @@
       <workItem from="1667825644363" duration="848000" />
       <workItem from="1667828479677" duration="858000" />
       <workItem from="1667994388019" duration="364000" />
-      <workItem from="1667998546860" duration="362000" />
+      <workItem from="1667998546860" duration="1426000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -236,7 +240,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667998828186</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Still working on fixing maven">
+      <created>1667999009042</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1667999009042</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Still working on fixing maven">
+      <created>1667999119669</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1667999119669</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Still working on fixing maven">
+      <created>1667999365770</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1667999365770</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +288,8 @@
     <MESSAGE value="Trying to fix maven" />
     <MESSAGE value="Fixed all warnings" />
     <MESSAGE value="Still working on fixing maven" />
-    <option name="LAST_COMMIT_MESSAGE" value="Still working on fixing maven" />
+    <MESSAGE value="Undid maven fixes, I know where the problem lies, I can fix it via making maven use newer java.&#10;This way the code is nicer though." />
+    <option name="LAST_COMMIT_MESSAGE" value="Undid maven fixes, I know where the problem lies, I can fix it via making maven use newer java.&#10;This way the code is nicer though." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
