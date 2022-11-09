@@ -20,7 +20,7 @@ public class ListeningBoi extends ListenerAdapter {
         }
         if (message.getMentions().isMentioned(event.getJDA().getSelfUser())) {
             message.addReaction(Emoji.fromUnicode("U+1F440")).queue();
-            String[] args = content.split("\s+");
+            String[] args = content.split(" ");
             if (args.length > 1) {
                 CommandManager.manageCommand(args, event);
             }
