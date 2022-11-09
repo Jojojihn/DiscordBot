@@ -16,10 +16,7 @@ public class CommandManager {
                 }
             }
             case "gayporn" -> {
-                event.getChannel().sendMessage("──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\u200B▀▀▀▀▀▀▌\n" +
-                                                    "───▄▄██▌█ beep beep ▄▄▄▌▐██▌█ gay porn delivery\n" +
-                                                    "███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\u200B▄▄▄▄▄▄▌\n" +
-                                                    "▀(@)▀▀▀▀▀▀▀(@)(@)▀▀▀▀▀▀▀▀▀▀▀▀▀\u200B▀▀▀▀(@)▀").queue();
+                event.getChannel().sendMessage("amogus").queue();
             }
             default -> {
                 event.getChannel().sendMessage("UwU. I am sowwy, I dont know what you mean :sob:").queue();
