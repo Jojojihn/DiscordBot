@@ -9,6 +9,8 @@ import util.UsefulFunctions;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import static vcStuff.GoodGirl.connectToVC;
+
 public class ObedientBoi extends ListenerAdapter {
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
@@ -58,6 +60,9 @@ public class ObedientBoi extends ListenerAdapter {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
+        }else if(event.getName().equals("vctest")){
+            connectToVC(event.getOption("vc").getAsString(), event.getGuild().getName());
+            System.out.println(event.getOption("vc").getAsString());
         }
     }
 }

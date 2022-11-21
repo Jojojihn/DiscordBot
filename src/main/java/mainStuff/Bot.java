@@ -9,9 +9,11 @@ import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.interactions.commands.Command;
+import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.managers.Presence;
 import net.dv8tion.jda.api.requests.GatewayIntent;
+import vcStuff.GoodGirl;
 
 import java.net.URL;
 import java.nio.file.Files;
@@ -20,13 +22,14 @@ import java.util.Scanner;
 
 public class Bot {
     static JDA bot;
+    public static GoodGirl gg;
     public static void main(String[] args) throws Exception {
         DBManager dbManager = new DBManager();
         dbManager.connect();
         URL tokenUrl = Bot.class.getResource("/token.txt");
         assert tokenUrl != null;
         String token = Files.readString(Paths.get(tokenUrl.toURI()));
-        bot = JDABuilder.createDefault(token, GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MESSAGE_REACTIONS)
+        bot = JDABuilder.createDefault(token, GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MESSAGE_REACTIONS, GatewayIntent.GUILD_VOICE_STATES, GatewayIntent.GUILD_EMOJIS_AND_STICKERS, GatewayIntent.SCHEDULED_EVENTS )
                 .addEventListeners(new ListeningBoi())
                 .addEventListeners(new ObedientBoi())
                 .addEventListeners(new ButtonBoi())
@@ -56,7 +59,9 @@ public class Bot {
                     Commands.slash("ping", "Pong"),
                     Commands.slash("help", "I'll do my best to help :)"),
                     Commands.slash("gayporn", "It's a secret"),
-                    Commands.slash("callme", "Tell me how to talk to you")
+                    Commands.slash("callme", "Tell me how to talk to you"),
+                    Commands.slash("vctest", "Test the planned vc feature")
+                            .addOption(OptionType.CHANNEL, "vc", "Which VC do you want me to join?")
             ).queue();
         }
     }
