@@ -16,7 +16,7 @@ public class ListeningBoi extends ListenerAdapter {
         SlayingBoi slayboi = new SlayingBoi();
         if(slayboi.slay(message)){
             slayCounter+=1;
-            Bot.updateStatus("Slay Counter: " + Integer.toString(slayCounter));
+            Bot.updateStatus("Slay Counter: " + slayCounter);
         }
         if (message.getMentions().isMentioned(event.getJDA().getSelfUser())) {
             message.addReaction(Emoji.fromUnicode("U+1F440")).queue();
@@ -24,6 +24,14 @@ public class ListeningBoi extends ListenerAdapter {
             if (args.length > 1) {
                 CommandManager.manageCommand(args, event);
             }
+        }
+        if(message.toString().toLowerCase().replace('o','u').contains("uwu")){
+            message.addReaction(Emoji.fromUnicode("U+1F4B0")).queue();
+            message.addReaction(Emoji.fromUnicode("U+2795")).queue();
+            message.addReaction(Emoji.fromFormatted("1️⃣")).queue();
+            message.removeReaction(Emoji.fromUnicode("U+1F4B0"), event.getJDA().getSelfUser()).queueAfter(150, java.util.concurrent.TimeUnit.MILLISECONDS);
+            message.removeReaction(Emoji.fromUnicode("U+2795"), event.getJDA().getSelfUser()).queueAfter(140, java.util.concurrent.TimeUnit.MILLISECONDS);
+            message.removeReaction(Emoji.fromFormatted("1️⃣"), event.getJDA().getSelfUser()).queueAfter(130, java.util.concurrent.TimeUnit.MILLISECONDS);
         }
     }
 }
