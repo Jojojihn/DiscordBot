@@ -8,6 +8,7 @@ import util.UsefulFunctions;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Objects;
 
 import static vcStuff.GoodGirl.connectToVC;
 
@@ -17,7 +18,7 @@ public class ObedientBoi extends ListenerAdapter {
         if (event.getName().equals("ping")) {
             event.reply("Pong!").queue();
         } else if (event.getName().equals("help")) {
-            if (event.getMember().getEffectiveName().equals("Big Boy")) {
+            if (Objects.requireNonNull(event.getMember()).getEffectiveName().equals("Big Boy")) {
                 event.reply("I'll do my best to help Small Boy :)").queue();
             } else {
                 String nick = UsefulFunctions.getNick(event.getMember().getId());
@@ -35,11 +36,7 @@ public class ObedientBoi extends ListenerAdapter {
             try {
                 dbManager.connect();
                 try {
-                    rs = dbManager.sendSQLwithResult("SELECT * FROM users WHERE id = '" + event.getMember().getId() + "'");
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
-                }
-                try {
+                    rs = dbManager.sendSQLwithResult("SELECT * FROM users WHERE id = '" + Objects.requireNonNull(event.getMember()).getId() + "'");
                     if (rs.getString(1) == null) {
                         dbManager.sendSQL("INSERT INTO users (id, name, nickname, currency) VALUES ('" + event.getMember().getId() + "' ," + "'" + event.getMember().getEffectiveName() + "', ' User ', '0')");
                     }
@@ -61,8 +58,28 @@ public class ObedientBoi extends ListenerAdapter {
                 throw new RuntimeException(e);
             }
         }else if(event.getName().equals("vctest")){
-            connectToVC(event.getOption("vc").getAsString(), event.getGuild().getName());
-            System.out.println(event.getOption("vc").getAsString());
+            connectToVC(Objects.requireNonNull(event.getOption("vc")).getAsString(), Objects.requireNonNull(event.getGuild()).getName());
+            System.out.println(Objects.requireNonNull(event.getOption("vc")).getAsString());
+        }else if (event.getName().equals("owocheck")) {
+            DBManager db = new DBManager();
+            if (event.getOption("user") == null) {
+                event.reply("Give me a user to check!").setEphemeral(true).queue();
+            } else {
+                try {
+                    db.connect();
+                    ResultSet rs = db.sendSQLwithResult("SELECT currency, name FROM users WHERE id = '" + Objects.requireNonNull(event.getOption("user")).getAsUser().getId() + "'");
+                    int currency = rs.getInt(1);
+                    String nick = rs.getString(2);
+                    if(nick==null){
+                        event.reply("This User does not have any OwO's").setEphemeral(true).queue();
+                    }else {
+                        event.reply(nick + " has " + currency + " OwO's").queue();
+                        db.disconnect();
+                    }
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 }

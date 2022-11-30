@@ -8,7 +8,6 @@ import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Guild;
-import net.dv8tion.jda.api.interactions.commands.Command;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.managers.Presence;
@@ -51,17 +50,15 @@ public class Bot {
 
     public static void updateCommands() throws InterruptedException {
         for(Guild guild : bot.getGuilds()){
-            for(Command c : guild.retrieveCommands().complete()){
-                c.delete().queue();
-            }
-            Thread.sleep(10);
             guild.updateCommands().addCommands(
                     Commands.slash("ping", "Pong"),
                     Commands.slash("help", "I'll do my best to help :)"),
                     Commands.slash("gayporn", "It's a secret"),
                     Commands.slash("callme", "Tell me how to talk to you"),
                     Commands.slash("vctest", "Test the planned vc feature")
-                            .addOption(OptionType.CHANNEL, "vc", "Which VC do you want me to join?")
+                            .addOption(OptionType.CHANNEL, "vc", "Which VC do you want me to join?"),
+                    Commands.slash("owocheck", "Check how many OwOs a User has.")
+                            .addOption(OptionType.USER, "user", "Which user do you want to check?")
             ).queue();
         }
     }
