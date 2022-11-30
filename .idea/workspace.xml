@@ -93,6 +93,7 @@
       <workItem from="1669278237770" duration="1303000" />
       <workItem from="1669280721985" duration="1613000" />
       <workItem from="1669812301119" duration="2245000" />
+      <workItem from="1669815647173" duration="456000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -311,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669814309441</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Made people gain OwOs and be able to check how many OwOs a person has">
+      <created>1669815995185</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1669815995185</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
