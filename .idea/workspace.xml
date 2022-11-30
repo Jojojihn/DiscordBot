@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Started work on cOwOrrency">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/ListeningBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ListeningBoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" afterDir="false" />
-    </list>
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Made people gain OwOs and be able to check how many OwOs a person has" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +92,7 @@
       <workItem from="1669021905105" duration="2682000" />
       <workItem from="1669278237770" duration="1303000" />
       <workItem from="1669280721985" duration="1613000" />
-      <workItem from="1669812301119" duration="1860000" />
+      <workItem from="1669812301119" duration="2245000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -302,7 +297,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669812323243</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Made people gain OwOs and be able to check how many OwOs a person has">
+      <created>1669814292845</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1669814292845</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Made people gain OwOs and be able to check how many OwOs a person has">
+      <created>1669814309441</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1669814309441</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +342,8 @@
     <MESSAGE value="Completely undid all previous fixes" />
     <MESSAGE value="Set the bot up to join vc" />
     <MESSAGE value="Started work on cOwOrrency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started work on cOwOrrency" />
+    <MESSAGE value="Made people gain OwOs and be able to check how many OwOs a person has" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made people gain OwOs and be able to check how many OwOs a person has" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
