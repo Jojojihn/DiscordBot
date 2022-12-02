@@ -46,6 +46,32 @@ public class DBManager {
         sendSQL("INSERT INTO users (id, name, nickname, currency) VALUES (" + user.id + ", '" + user.name + "', '" + user.nickname + "', 0)");
     }
 
+    public static DCUser getUserByID(String ID){
+        ResultSet rs = sendSQLwithResult("SELECT * FROM users WHERE id = " + ID);
+        try {
+            if(rs.next()){
+                return new DCUser(rs.getString("id"), rs.getString("name"), rs.getString("nickname"), rs.getInt("currency"));
+            }else{
+                return null;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static DCUser getUserByName(String name){
+        ResultSet rs = sendSQLwithResult("SELECT * FROM users WHERE name = '" + name + "'");
+        try {
+            if(rs.next()){
+                return new DCUser(rs.getString("id"), rs.getString("name"), rs.getString("nickname"), rs.getInt("currency"));
+            }else{
+                return null;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public static void disconnect(){
         try {
             conn.close();
