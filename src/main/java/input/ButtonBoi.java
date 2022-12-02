@@ -10,6 +10,7 @@ import net.dv8tion.jda.api.interactions.components.text.TextInputStyle;
 import net.dv8tion.jda.api.interactions.modals.Modal;
 
 import java.sql.SQLException;
+import java.util.Objects;
 
 public class ButtonBoi extends ListenerAdapter {
 
@@ -65,7 +66,9 @@ public class ButtonBoi extends ListenerAdapter {
     @Override
     public void onModalInteraction(ModalInteractionEvent event) {
         if (event.getModalId().equals("customNick")) {
-            String nick = event.getValue("nickname").getAsString();
+            String nick = Objects.requireNonNull(event.getValue("nickname")).getAsString();
+            nick = nick.replace("'", "*");
+            nick = nick.replace(";", "*");
             try {
                 DBManager dbManager = new DBManager();
                 dbManager.connect();
