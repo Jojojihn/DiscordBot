@@ -1,7 +1,6 @@
 package input;
 
 import commandStuff.CommandManager;
-import databaseStuff.DBManager;
 import mainStuff.Bot;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.emoji.Emoji;
@@ -11,6 +10,9 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
+
+import static databaseStuff.DBManager.sendSQL;
+import static databaseStuff.DBManager.sendSQLwithResult;
 
 public class ListeningBoi extends ListenerAdapter {
     int slayCounter = 0;
@@ -31,14 +33,11 @@ public class ListeningBoi extends ListenerAdapter {
             }
         }
         if(message.toString().toLowerCase().replace('o','u').contains("uwu")){
-            DBManager dbManager = new DBManager();
+            ResultSet rs = sendSQLwithResult("SELECT * FROM users WHERE id = '" + Objects.requireNonNull(event.getMember()).getId() + "'");
             try {
-                dbManager.connect();
-                ResultSet rs = dbManager.sendSQLwithResult("SELECT * FROM users WHERE id = '" + Objects.requireNonNull(event.getMember()).getId() + "'");
                 if (rs.getString(1) == null) {
-                    dbManager.sendSQL("INSERT INTO users (id, name, nickname, currency) VALUES ('" + event.getMember().getId() + "' ," + "'" + event.getMember().getEffectiveName() + "', ' User ', '0')");
+                    sendSQL("INSERT INTO users (id, name, nickname, currency) VALUES ('" + event.getMember().getId() + "' ," + "'" + event.getMember().getEffectiveName() + "', ' User ', '0')");
                 }
-                dbManager.disconnect();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
@@ -48,14 +47,7 @@ public class ListeningBoi extends ListenerAdapter {
             message.removeReaction(Emoji.fromUnicode("U+1F4B0"), event.getJDA().getSelfUser()).queueAfter(150, java.util.concurrent.TimeUnit.MILLISECONDS);
             message.removeReaction(Emoji.fromUnicode("U+2795"), event.getJDA().getSelfUser()).queueAfter(140, java.util.concurrent.TimeUnit.MILLISECONDS);
             message.removeReaction(Emoji.fromFormatted("1️⃣"), event.getJDA().getSelfUser()).queueAfter(130, java.util.concurrent.TimeUnit.MILLISECONDS);
-            DBManager db = new DBManager();
-            try {
-                db.connect();
-                db.sendSQL("UPDATE users SET currency = currency + 1 WHERE id = " + event.getAuthor().getId());
-                db.disconnect();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
+            sendSQL("UPDATE users SET currency = currency + 1 WHERE id = " + event.getAuthor().getId());
         }
     }
 }

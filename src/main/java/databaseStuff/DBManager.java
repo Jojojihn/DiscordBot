@@ -1,15 +1,16 @@
 package databaseStuff;
 
 import java.sql.*;
+import java.util.Objects;
 
 public class DBManager {
-    Connection conn = null;
+    static Connection conn = null;
 
-    public void connect() throws SQLException {
+    public static void connect(){
         try {
             // db parameters
-            String url = null;
-            url = getClass().getClassLoader().getResource("Database.db").toString();
+            ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+            String url = Objects.requireNonNull(classLoader.getResource("Database.db")).toString();
             conn = DriverManager.getConnection("jdbc:sqlite:" + url);
 
             System.out.println("Connection to SQLite has been established.");
@@ -19,18 +20,31 @@ public class DBManager {
         }
     }
 
-    public void sendSQL(String sql) throws SQLException {
-        Statement statement = conn.createStatement();
-        statement.execute(sql);
+    public static void sendSQL(String sql){
+        Statement statement;
+        try {
+            statement = conn.createStatement();
+            statement.execute(sql);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    public ResultSet sendSQLwithResult(String sql) throws SQLException{
-        Statement statement = conn.createStatement();
-        ResultSet result = statement.executeQuery(sql);
-        return result;
+    public static ResultSet sendSQLwithResult(String sql){
+        Statement statement;
+        try {
+            statement = conn.createStatement();
+            return statement.executeQuery(sql);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    public void disconnect() throws SQLException{
-        conn.close();
+    public static void disconnect(){
+        try {
+            conn.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

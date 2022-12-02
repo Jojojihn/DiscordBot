@@ -1,6 +1,5 @@
 package mainStuff;
 
-import databaseStuff.DBManager;
 import input.ButtonBoi;
 import input.ListeningBoi;
 import input.ObedientBoi;
@@ -12,19 +11,20 @@ import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.managers.Presence;
 import net.dv8tion.jda.api.requests.GatewayIntent;
-import vcStuff.GoodGirl;
 
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
+import static databaseStuff.DBManager.connect;
+import static databaseStuff.DBManager.sendSQL;
+
+
 public class Bot {
     static JDA bot;
-    public static GoodGirl gg;
     public static void main(String[] args) throws Exception {
-        DBManager dbManager = new DBManager();
-        dbManager.connect();
+        connect();
         URL tokenUrl = Bot.class.getResource("/token.txt");
         assert tokenUrl != null;
         String token = Files.readString(Paths.get(tokenUrl.toURI()));
@@ -44,11 +44,11 @@ public class Bot {
         }else{
             System.out.println("Commands not updated");
         }
-        dbManager.sendSQL("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, nickname TEXT, currency INTEGER)");
+        sendSQL("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, nickname TEXT, currency INTEGER)");
 
     }
 
-    public static void updateCommands() throws InterruptedException {
+    public static void updateCommands(){
         for(Guild guild : bot.getGuilds()){
             guild.updateCommands().addCommands(
                     Commands.slash("ping", "Pong"),

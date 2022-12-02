@@ -1,36 +1,30 @@
 package util;
 
-import databaseStuff.DBManager;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import static databaseStuff.DBManager.sendSQLwithResult;
+
 public class UsefulFunctions {
 
-    public static String getNick(String id){
-        DBManager dbManager = new DBManager();
+    public static String getNick(String id) {
         ResultSet rs;
+        rs = sendSQLwithResult("SELECT * FROM users WHERE id = '" + id + "'");
         try {
-            dbManager.connect();
-            try {
-                rs = dbManager.sendSQLwithResult("SELECT * FROM users WHERE id = '" + id + "'");
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
+            if (rs.getString(1) == null) {
+                return "User";
             }
-            try {
-                if (rs.getString(1) == null) {
-                    return "User";
-                }
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-            rs = dbManager.sendSQLwithResult("SELECT * FROM users WHERE id = '" + id + "'");
-            String nickname = rs.getString("nickname");
-            dbManager.disconnect();
-            return nickname;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        rs = sendSQLwithResult("SELECT * FROM users WHERE id = '" + id + "'");
+        String nickname;
+        try {
+            nickname = rs.getString("nickname");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return nickname;
     }
 
 }
