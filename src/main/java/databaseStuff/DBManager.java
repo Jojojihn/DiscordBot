@@ -1,5 +1,7 @@
 package databaseStuff;
 
+import util.DCUser;
+
 import java.sql.*;
 import java.util.Objects;
 
@@ -38,6 +40,10 @@ public class DBManager {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static void addUser(DCUser user){
+        sendSQL("INSERT INTO users (id, name, nickname, currency) VALUES (" + user.id + ", '" + user.name + "', '" + user.nickname + "', 0)");
     }
 
     public static void disconnect(){

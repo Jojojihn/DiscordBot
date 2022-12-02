@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="SQL injection attack goes brrrrrrrrrr">
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Make Database stuff static, so the bot only uses one DBManager">
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/DCUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/ButtonBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ButtonBoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/ListeningBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ListeningBoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/UsefulFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/UsefulFunctions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -106,7 +103,7 @@
       <workItem from="1669815647173" duration="1044000" />
       <workItem from="1669965270683" duration="1321000" />
       <workItem from="1669969100180" duration="142000" />
-      <workItem from="1669981198386" duration="1286000" />
+      <workItem from="1669981198386" duration="2085000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -353,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669965769178</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Make Database stuff static, so the bot only uses one DBManager">
+      <created>1669982765157</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1669982765157</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +392,8 @@
     <MESSAGE value="Nothing I think?" />
     <MESSAGE value="Website shenanigans" />
     <MESSAGE value="SQL injection attack goes brrrrrrrrrr" />
-    <option name="LAST_COMMIT_MESSAGE" value="SQL injection attack goes brrrrrrrrrr" />
+    <MESSAGE value="Make Database stuff static, so the bot only uses one DBManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make Database stuff static, so the bot only uses one DBManager" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

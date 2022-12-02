@@ -3,13 +3,14 @@ package input;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.components.buttons.Button;
+import util.DCUser;
 import util.UsefulFunctions;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
 
-import static databaseStuff.DBManager.sendSQL;
+import static databaseStuff.DBManager.addUser;
 import static databaseStuff.DBManager.sendSQLwithResult;
 import static vcStuff.GoodGirl.connectToVC;
 
@@ -36,19 +37,19 @@ public class ObedientBoi extends ListenerAdapter {
             rs = sendSQLwithResult("SELECT * FROM users WHERE id = '" + Objects.requireNonNull(event.getMember()).getId() + "'");
             try {
                 if (rs.getString(1) == null) {
-                    sendSQL("INSERT INTO users (id, name, nickname, currency) VALUES ('" + event.getMember().getId() + "' ," + "'" + event.getMember().getEffectiveName() + "', ' User ', '0')");
-
-                    String nickname = UsefulFunctions.getNick(event.getMember().getId());
-                    event.reply("What do you want me to call you, " + nickname + "?")
-                            .setEphemeral(true)
-                            .addActionRow(
-                                    Button.secondary("daddy", "Daddy"),
-                                    Button.secondary("mommy", "Mommy"),
-                                    Button.secondary("master", "Master"),
-                                    Button.secondary("baby", "Baby"),
-                                    Button.secondary("custom", "Custom"))
-                            .queue();
+                    addUser(new DCUser(event.getMember().getId(), event.getMember().getEffectiveName(), "User", 0));
                 }
+                String nickname = UsefulFunctions.getNick(event.getMember().getId());
+                event.reply("What do you want me to call you, " + nickname + "?")
+                        .setEphemeral(true)
+                        .addActionRow(
+                                Button.secondary("daddy", "Daddy"),
+                                Button.secondary("mommy", "Mommy"),
+                                Button.secondary("master", "Master"),
+                                Button.secondary("baby", "Baby"),
+                                Button.secondary("custom", "Custom"))
+                        .queue();
+
             }catch (SQLException e) {
                 throw new RuntimeException(e);
             }
