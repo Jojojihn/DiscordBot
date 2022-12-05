@@ -10,23 +10,23 @@ import net.dv8tion.jda.api.interactions.modals.Modal;
 
 import java.util.Objects;
 
-import static databaseStuff.DBManager.sendSQL;
+import static databaseStuff.DBManager.setNickname;
 
 public class ButtonBoi extends ListenerAdapter {
 
     @Override
     public void onButtonInteraction(ButtonInteractionEvent event) {
         if (event.getComponentId().equals("daddy")) {
-            sendSQL("UPDATE users SET nickname = 'Daddy' WHERE id = " + event.getUser().getId());
+            setNickname(event.getUser().getId(), "Daddy");
             event.reply("Alright Daddy").setEphemeral(true).queue();
         }else if (event.getComponentId().equals("mommy")) {
-            sendSQL("UPDATE users SET nickname = 'Mommy' WHERE id = " + event.getUser().getId());
+            setNickname(event.getUser().getId(), "Mommy");
             event.reply("Alright Mommy").setEphemeral(true).queue();
         }else if (event.getComponentId().equals("master")) {
-            sendSQL("UPDATE users SET nickname = 'Master' WHERE id = " + event.getUser().getId());
+            setNickname(event.getUser().getId(), "Master");
             event.reply("Alright Master").setEphemeral(true).queue();
         }else if (event.getComponentId().equals("baby")) {
-            sendSQL("UPDATE users SET nickname = 'Baby' WHERE id = " + event.getUser().getId());
+            setNickname(event.getUser().getId(), "Baby");
             event.reply("Alright Baby").setEphemeral(true).queue();
         }else if (event.getComponentId().equals("custom")) {
             TextInput nickname = TextInput.create("nickname", "What Nickname do you want?", TextInputStyle.SHORT)
@@ -45,7 +45,7 @@ public class ButtonBoi extends ListenerAdapter {
             String nick = Objects.requireNonNull(event.getValue("nickname")).getAsString();
             nick = nick.replace("'", "*");
             nick = nick.replace(";", "*");
-            sendSQL("UPDATE users SET nickname = '"+nick+"' WHERE id = " + event.getUser().getId());
+            setNickname(event.getUser().getId(), nick);
             event.reply("Alright "+nick).setEphemeral(true).queue();
         }
     }

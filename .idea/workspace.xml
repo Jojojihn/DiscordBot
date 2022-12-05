@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Implemented addUser function" />
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Finished first round of database cleanup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,6 +99,9 @@
       <workItem from="1669965270683" duration="1321000" />
       <workItem from="1669969100180" duration="142000" />
       <workItem from="1669981198386" duration="2147000" />
+      <workItem from="1669983621729" duration="155000" />
+      <workItem from="1670238104146" duration="49000" />
+      <workItem from="1670238225257" duration="1070000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -359,7 +362,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669983334452</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Implemented getUser function&#10;//TODO User this newly implemented Function instead of calling SQL everywhere">
+      <created>1669983770245</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1669983770245</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Finished first round of database cleanup">
+      <created>1670239138914</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1670239138914</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +413,9 @@
     <MESSAGE value="SQL injection attack goes brrrrrrrrrr" />
     <MESSAGE value="Make Database stuff static, so the bot only uses one DBManager" />
     <MESSAGE value="Implemented addUser function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented addUser function" />
+    <MESSAGE value="Implemented getUser function&#10;//TODO User this newly implemented Function instead of calling SQL everywhere" />
+    <MESSAGE value="Finished first round of database cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished first round of database cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

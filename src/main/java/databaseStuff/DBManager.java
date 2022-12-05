@@ -1,7 +1,5 @@
 package databaseStuff;
 
-import util.DCUser;
-
 import java.sql.*;
 import java.util.Objects;
 
@@ -59,17 +57,11 @@ public class DBManager {
         }
     }
 
-    public static DCUser getUserByName(String name){
-        ResultSet rs = sendSQLwithResult("SELECT * FROM users WHERE name = '" + name + "'");
-        try {
-            if(rs.next()){
-                return new DCUser(rs.getString("id"), rs.getString("name"), rs.getString("nickname"), rs.getInt("currency"));
-            }else{
-                return null;
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+    public static void addCurrency(String ID, int amount){
+        sendSQL("UPDATE users SET currency = currency + " + amount + " WHERE id = " + ID);
+    }
+    public static void setNickname(String ID, String nickname){
+        sendSQL("UPDATE users SET nickname = '" + nickname + "' WHERE id = " + ID);
     }
 
     public static void disconnect(){

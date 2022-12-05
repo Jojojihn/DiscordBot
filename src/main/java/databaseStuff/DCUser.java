@@ -1,4 +1,4 @@
-package util;
+package databaseStuff;
 
 public class DCUser {
     public String id;

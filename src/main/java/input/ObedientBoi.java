@@ -1,17 +1,15 @@
 package input;
 
+import databaseStuff.DCUser;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.components.buttons.Button;
-import util.DCUser;
-import util.UsefulFunctions;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
 
-import static databaseStuff.DBManager.addUser;
-import static databaseStuff.DBManager.sendSQLwithResult;
+import static databaseStuff.DBManager.*;
 import static vcStuff.GoodGirl.connectToVC;
 
 public class ObedientBoi extends ListenerAdapter {
@@ -23,7 +21,7 @@ public class ObedientBoi extends ListenerAdapter {
             if (Objects.requireNonNull(event.getMember()).getEffectiveName().equals("Big Boy")) {
                 event.reply("I'll do my best to help Small Boy :)").queue();
             } else {
-                String nick = UsefulFunctions.getNick(event.getMember().getId());
+                String nick = Objects.requireNonNull(getUserByID(event.getUser().getId())).nickname;
                 event.reply("I'll do my best to help " + nick + " :)").queue();
             }
         } else if (event.getName().equals("gayporn")) {
@@ -39,7 +37,7 @@ public class ObedientBoi extends ListenerAdapter {
                 if (rs.getString(1) == null) {
                     addUser(new DCUser(event.getMember().getId(), event.getMember().getEffectiveName(), "User", 0));
                 }
-                String nickname = UsefulFunctions.getNick(event.getMember().getId());
+                String nickname = Objects.requireNonNull(getUserByID(event.getUser().getId())).nickname;
                 event.reply("What do you want me to call you, " + nickname + "?")
                         .setEphemeral(true)
                         .addActionRow(
@@ -60,17 +58,13 @@ public class ObedientBoi extends ListenerAdapter {
             if (event.getOption("user") == null) {
                 event.reply("Give me a user to check!").setEphemeral(true).queue();
             } else {
-                try {
-                    ResultSet rso = sendSQLwithResult("SELECT currency, name FROM users WHERE id = '" + Objects.requireNonNull(event.getOption("user")).getAsUser().getId() + "'");
-                    int currency = rso.getInt(1);
-                    String nick = rso.getString(2);
-                    if (nick == null) {
-                        event.reply("This User does not have any OwO's").setEphemeral(true).queue();
-                    } else {
-                        event.reply(nick + " has " + currency + " OwO's").queue();
-                    }
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
+                DCUser dcu = getUserByID(Objects.requireNonNull(event.getOption("user")).getAsUser().getId());
+                if (dcu == null) {
+                    event.reply("This User does not have any OwO's").setEphemeral(true).queue();
+                } else {
+                    String nick = dcu.nickname;
+                    int currency = dcu.currency;
+                    event.reply(nick + " has " + currency + " OwO's").queue();
                 }
             }
         }
