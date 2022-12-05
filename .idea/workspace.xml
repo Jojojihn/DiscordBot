@@ -4,36 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Finished first round of database cleanup">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/APImain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/ShopItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/websiteStuff/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/556e1ff8-4530-4686-8f6c-4e57783bc9dd.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websiteStuff/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database.db" afterDir="false" />
+    <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/72ddf8ee-d5b3-485f-b1e8-d0c7abc6e97f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,435 +27,44 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GZwqwMpiorN2S4XsOCS8HREXRr" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
+  <component name="ProjectId" id="2IVLhWoDW04WJZyx4jASz4k7jX9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jojoj/Documents/GitHub/DiscordBot/src/main/resources/Database.db",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "sqlite"
-    ]
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jojoj\Documents\GitHub\DiscordBot\src\main\java\websiteStuff" />
-      <recent name="C:\Users\jojoj\Documents\GitHub\DiscordBot\src\main\resources" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Bot">
-    <configuration name="Bot" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mainStuff.Bot" />
-      <module name="DiscordBot" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DiscordBot/websiteStuff/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="" />
-      <created>1666609609860</created>
+      <changelist id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="" />
+      <created>1670261928159</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666609609860</updated>
-      <workItem from="1666613096819" duration="189000" />
-      <workItem from="1666613299363" duration="5843000" />
-      <workItem from="1666620018119" duration="3668000" />
-      <workItem from="1667262464236" duration="4545000" />
-      <workItem from="1667375669471" duration="6520000" />
-      <workItem from="1667385213387" duration="3547000" />
-      <workItem from="1667469125905" duration="2965000" />
-      <workItem from="1667486054748" duration="4503000" />
-      <workItem from="1667589145573" duration="839000" />
-      <workItem from="1667656995701" duration="1067000" />
-      <workItem from="1667825644363" duration="848000" />
-      <workItem from="1667828479677" duration="858000" />
-      <workItem from="1667994388019" duration="364000" />
-      <workItem from="1667998546860" duration="3436000" />
-      <workItem from="1668434212367" duration="141000" />
-      <workItem from="1669021905105" duration="2682000" />
-      <workItem from="1669278237770" duration="1303000" />
-      <workItem from="1669280721985" duration="1613000" />
-      <workItem from="1669812301119" duration="2245000" />
-      <workItem from="1669815647173" duration="1044000" />
-      <workItem from="1669965270683" duration="1321000" />
-      <workItem from="1669969100180" duration="142000" />
-      <workItem from="1669981198386" duration="2147000" />
-      <workItem from="1669983621729" duration="155000" />
-      <workItem from="1670238104146" duration="49000" />
-      <workItem from="1670238225257" duration="1952000" />
-      <workItem from="1670240322491" duration="592000" />
-      <workItem from="1670248640314" duration="1797000" />
-      <workItem from="1670261024992" duration="39000" />
+      <updated>1670261928159</updated>
+      <workItem from="1670261930776" duration="35000" />
     </task>
-    <task id="LOCAL-00001" summary="First &quot;working&quot; build">
-      <created>1666616634013</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1666616634013</updated>
-    </task>
-    <task id="LOCAL-00002" summary="First &quot;working&quot; build">
-      <created>1666616755262</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1666616755262</updated>
-    </task>
-    <task id="LOCAL-00003" summary="First &quot;working&quot; build">
-      <created>1666616815288</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1666616815288</updated>
-    </task>
-    <task id="LOCAL-00004" summary="First &quot;working&quot; build">
-      <created>1666616845028</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1666616845028</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Some minor updates">
-      <created>1667385932879</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1667385932879</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Some minor updates">
-      <created>1667385950562</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1667385950562</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Some minor updates">
-      <created>1667386074069</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1667386074069</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Some minor updates">
-      <created>1667386197108</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1667386197108</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Some minor updates">
-      <created>1667386291820</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1667386291820</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fixed maven">
-      <created>1667386510125</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1667386510125</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Fixed maven">
-      <created>1667386652582</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1667386652582</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Finished the callme">
-      <created>1667487466179</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1667487466179</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Fixed typos">
-      <created>1667657067366</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1667657067366</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Trying to fix maven">
-      <created>1667657556863</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1667657556863</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Trying to fix maven">
-      <created>1667657663496</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1667657663496</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Trying to fix maven">
-      <created>1667657754961</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1667657754961</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Trying to fix maven">
-      <created>1667657952307</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1667657952307</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Fixed all warnings">
-      <created>1667831840803</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1667831840803</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Still working on fixing maven">
-      <created>1667994691292</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1667994691292</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Still working on fixing maven">
-      <created>1667998728949</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1667998728949</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Still working on fixing maven">
-      <created>1667998828186</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1667998828186</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Still working on fixing maven">
-      <created>1667999009042</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1667999009042</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Still working on fixing maven">
-      <created>1667999119669</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1667999119669</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Still working on fixing maven">
-      <created>1667999365770</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1667999365770</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Undid maven fixes, I know where the problem lies, I can fix it via making maven use newer java.&#10;This way the code is nicer though.">
-      <created>1668000052169</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1668000052169</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Completely undid all previous fixes">
-      <created>1668002063155</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1668002063155</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Set the bot up to join vc">
-      <created>1669024699768</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1669024699768</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Started work on cOwOrrency">
-      <created>1669281548287</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1669281548287</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Started work on cOwOrrency">
-      <created>1669812323243</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1669812323243</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Made people gain OwOs and be able to check how many OwOs a person has">
-      <created>1669814292845</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1669814292845</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Made people gain OwOs and be able to check how many OwOs a person has">
-      <created>1669814309441</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1669814309441</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Made people gain OwOs and be able to check how many OwOs a person has">
-      <created>1669815995185</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1669815995185</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Nothing I think?">
-      <created>1669816113429</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1669816113429</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Website shenanigans">
-      <created>1669965529786</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1669965529786</updated>
-    </task>
-    <task id="LOCAL-00035" summary="SQL injection attack goes brrrrrrrrrr">
-      <created>1669965769178</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1669965769178</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Make Database stuff static, so the bot only uses one DBManager">
-      <created>1669982765157</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1669982765157</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Implemented addUser function">
-      <created>1669983334452</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1669983334452</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Implemented getUser function&#10;//TODO User this newly implemented Function instead of calling SQL everywhere">
-      <created>1669983770245</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1669983770245</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Finished first round of database cleanup">
-      <created>1670239138914</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1670239138914</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Some Database cleanup, started work on shop system/website, pushed API to the back for now">
-      <created>1670250044599</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1670250044599</updated>
-    </task>
-    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="First &quot;working&quot; build" />
-    <MESSAGE value="Some minor updates" />
-    <MESSAGE value="Fixed maven" />
-    <MESSAGE value="Finished the callme" />
-    <MESSAGE value="Fixed typos" />
-    <MESSAGE value="Trying to fix maven" />
-    <MESSAGE value="Fixed all warnings" />
-    <MESSAGE value="Still working on fixing maven" />
-    <MESSAGE value="Undid maven fixes, I know where the problem lies, I can fix it via making maven use newer java.&#10;This way the code is nicer though." />
-    <MESSAGE value="Completely undid all previous fixes" />
-    <MESSAGE value="Set the bot up to join vc" />
-    <MESSAGE value="Started work on cOwOrrency" />
-    <MESSAGE value="Made people gain OwOs and be able to check how many OwOs a person has" />
-    <MESSAGE value="Nothing I think?" />
-    <MESSAGE value="Website shenanigans" />
-    <MESSAGE value="SQL injection attack goes brrrrrrrrrr" />
-    <MESSAGE value="Make Database stuff static, so the bot only uses one DBManager" />
-    <MESSAGE value="Implemented addUser function" />
-    <MESSAGE value="Implemented getUser function&#10;//TODO User this newly implemented Function instead of calling SQL everywhere" />
-    <MESSAGE value="Finished first round of database cleanup" />
-    <MESSAGE value="Some Database cleanup, started work on shop system/website, pushed API to the back for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some Database cleanup, started work on shop system/website, pushed API to the back for now" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
