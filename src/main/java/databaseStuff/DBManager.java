@@ -1,7 +1,6 @@
 package databaseStuff;
 
 import java.sql.*;
-import java.util.Objects;
 
 public class DBManager {
     static Connection conn = null;
@@ -9,8 +8,7 @@ public class DBManager {
     public static void connect(){
         try {
             // db parameters
-            ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-            String url = Objects.requireNonNull(classLoader.getResource("Database.db")).toString();
+            String url = "src/main/resources/Database.db";
             conn = DriverManager.getConnection("jdbc:sqlite:" + url);
 
             System.out.println("Connection to SQLite has been established.");
@@ -62,6 +60,10 @@ public class DBManager {
     }
     public static void setNickname(String ID, String nickname){
         sendSQL("UPDATE users SET nickname = '" + nickname + "' WHERE id = " + ID);
+    }
+
+    public static void addShopItem(ShopItem item){
+        sendSQL("INSERT INTO shop (name, description, price, image) VALUES ('" + item.name + "', '" + item.description + "', " + item.price + ", '" + item.image + "')");
     }
 
     public static void disconnect(){

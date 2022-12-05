@@ -1,5 +1,6 @@
 package mainStuff;
 
+import api.APImain;
 import input.ButtonBoi;
 import input.ListeningBoi;
 import input.ObedientBoi;
@@ -24,6 +25,8 @@ import static databaseStuff.DBManager.sendSQL;
 public class Bot {
     static JDA bot;
     public static void main(String[] args) throws Exception {
+        APImain api = new APImain();
+        api.start();
         connect();
         URL tokenUrl = Bot.class.getResource("/token.txt");
         assert tokenUrl != null;
@@ -45,6 +48,7 @@ public class Bot {
             System.out.println("Commands not updated");
         }
         sendSQL("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, nickname TEXT, currency INTEGER)");
+        sendSQL("CREATE TABLE IF NOT EXISTS shop (id INTEGER PRIMARY KEY, name TEXT, description TEXT, price INTEGER, image TEXT)");
     }
 
     public static void updateCommands(){
