@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Some Database cleanup, started work on shop system/website, pushed API to the back for now">
       <change afterPath="$PROJECT_DIR$/websiteStuff/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -11,6 +12,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/websiteStuff/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteStuff/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/websiteStuff/style.css" beforeDir="false" />
+=======
+    <list default="true" id="54b720d9-4cf8-40a0-b180-f8f41fb45c09" name="Changes" comment="Finished first round of database cleanup">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/APImain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/ShopItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websiteStuff/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/556e1ff8-4530-4686-8f6c-4e57783bc9dd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websiteStuff/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database.db" afterDir="false" />
+>>>>>>> parent of a66a120 (Delete .idea directory)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +59,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -69,6 +86,34 @@
     ]
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jojoj/Documents/GitHub/DiscordBot/src/main/resources/Database.db",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "sqlite"
+    ]
+  }
+}]]></component>
+>>>>>>> parent of a66a120 (Delete .idea directory)
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jojoj\Documents\GitHub\DiscordBot\src\main\java\websiteStuff" />
@@ -127,8 +172,12 @@
       <workItem from="1670238104146" duration="49000" />
       <workItem from="1670238225257" duration="1952000" />
       <workItem from="1670240322491" duration="592000" />
+<<<<<<< HEAD
       <workItem from="1670248640314" duration="1797000" />
       <workItem from="1670261024992" duration="39000" />
+=======
+      <workItem from="1670248640314" duration="1157000" />
+>>>>>>> parent of a66a120 (Delete .idea directory)
     </task>
     <task id="LOCAL-00001" summary="First &quot;working&quot; build">
       <created>1666616634013</created>
@@ -403,6 +452,7 @@
       <option name="project" value="LOCAL" />
       <updated>1670239138914</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00040" summary="Some Database cleanup, started work on shop system/website, pushed API to the back for now">
       <created>1670250044599</created>
       <option name="number" value="00040" />
@@ -411,6 +461,9 @@
       <updated>1670250044599</updated>
     </task>
     <option name="localTasksCounter" value="41" />
+=======
+    <option name="localTasksCounter" value="40" />
+>>>>>>> parent of a66a120 (Delete .idea directory)
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,8 +502,12 @@
     <MESSAGE value="Implemented addUser function" />
     <MESSAGE value="Implemented getUser function&#10;//TODO User this newly implemented Function instead of calling SQL everywhere" />
     <MESSAGE value="Finished first round of database cleanup" />
+<<<<<<< HEAD
     <MESSAGE value="Some Database cleanup, started work on shop system/website, pushed API to the back for now" />
     <option name="LAST_COMMIT_MESSAGE" value="Some Database cleanup, started work on shop system/website, pushed API to the back for now" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="Finished first round of database cleanup" />
+>>>>>>> parent of a66a120 (Delete .idea directory)
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
