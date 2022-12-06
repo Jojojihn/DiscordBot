@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="s">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteStuff/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteStuff/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="A navbar I guess" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +51,7 @@
       <updated>1670261928159</updated>
       <workItem from="1670261930776" duration="35000" />
       <workItem from="1670262131664" duration="207000" />
-      <workItem from="1670288392727" duration="381000" />
+      <workItem from="1670288392727" duration="415000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1670262333704</created>
@@ -63,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670262333704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="A navbar I guess">
+      <created>1670288802219</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670288802219</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +86,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="s" />
-    <option name="LAST_COMMIT_MESSAGE" value="s" />
+    <MESSAGE value="A navbar I guess" />
+    <option name="LAST_COMMIT_MESSAGE" value="A navbar I guess" />
   </component>
 </project>
