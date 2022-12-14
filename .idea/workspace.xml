@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="Another go at the website">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Games/WaifuCollection/MainWaifu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Games/a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBWaif.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/valorantStuff/StoreChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,6 +44,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2IVLhWoDW04WJZyx4jASz4k7jX9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,13 +57,28 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Bot">
+    <configuration name="Bot" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="mainStuff.Bot" />
+      <module name="DiscordBot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/DiscordBot/websiteStuff/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Bot" />
+      <item itemvalue="JavaScript Debug.index.html" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

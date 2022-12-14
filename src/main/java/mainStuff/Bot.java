@@ -19,8 +19,6 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 import static databaseStuff.DBManager.connect;
-import static databaseStuff.DBManager.sendSQL;
-
 
 public class Bot {
     static JDA bot;
@@ -47,8 +45,7 @@ public class Bot {
         }else{
             System.out.println("Commands not updated");
         }
-        sendSQL("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, nickname TEXT, currency INTEGER)");
-        sendSQL("CREATE TABLE IF NOT EXISTS shop (id INTEGER PRIMARY KEY, name TEXT, description TEXT, price INTEGER, image TEXT)");
+
     }
 
     public static void updateCommands(){
@@ -61,7 +58,21 @@ public class Bot {
                     Commands.slash("vctest", "Test the planned vc feature")
                             .addOption(OptionType.CHANNEL, "vc", "Which VC do you want me to join?"),
                     Commands.slash("owocheck", "Check how many OwOs a User has.")
-                            .addOption(OptionType.USER, "user", "Which user do you want to check?")
+                            .addOption(OptionType.USER, "user", "Which user do you want to check?"),
+                    Commands.slash("addcustomwaifu", "Adds a fully custom waifu")
+                            .addOption(OptionType.STRING, "name", "What is the name of the waifu?")
+                            .addOption(OptionType.STRING, "description", "What is the description of the waifu?")
+                            .addOption(OptionType.INTEGER, "rarity", "What is the rarity of the waifu?")
+                            .addOption(OptionType.INTEGER, "price", "How many OwOs for this waifu?")
+                            .addOption(OptionType.STRING, "image", "What is link to the image of the waifu?"),
+                    Commands.slash("showwaifu", "Shows a specific waifu")
+                            .addOption(OptionType.STRING, "name", "What is the name of the waifu?"),
+                    Commands.slash("addrole", "Adds a role with bot access level")
+                            .addOption(OptionType.ROLE, "role", "Whats the role?")
+                            .addOption(OptionType.STRING , "accessgroup", "What is the access group? (To see all the access groups, use the command 'showaccessgroups')"),
+                    Commands.slash("showaccessgroups", "Shows all the access groups"),
+                    Commands.slash("removewaifu", "Removes a waifu")
+                            .addOption(OptionType.STRING, "name", "What is the name of the waifu?")
             ).queue();
         }
     }
