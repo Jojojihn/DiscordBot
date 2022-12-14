@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="Another go at the website">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Games/WaifuCollection/MainWaifu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Games/a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBWaif.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/valorantStuff/StoreChecker.java" afterDir="false" />
+    <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="Added waifu game and access groups">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670957099427</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added waifu game and access groups">
+      <created>1671025830274</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671025830274</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +154,8 @@
     <MESSAGE value="A navbar I guess" />
     <MESSAGE value="Made .idea part of gitignore, will let the files stay on github as a backup, if any meaningful changes are made, I need to manually put those onto github" />
     <MESSAGE value="Another go at the website" />
-    <option name="LAST_COMMIT_MESSAGE" value="Another go at the website" />
+    <MESSAGE value="Added waifu game" />
+    <MESSAGE value="Added waifu game and access groups" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added waifu game and access groups" />
   </component>
 </project>
