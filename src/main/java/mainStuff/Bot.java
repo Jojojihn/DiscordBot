@@ -19,6 +19,7 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 import static databaseStuff.DBManager.connect;
+import static databaseStuff.DBManager.disconnect;
 
 public class Bot {
     static JDA bot;
@@ -46,7 +47,9 @@ public class Bot {
         }else{
             System.out.println("Commands not updated");
         }
-
+        if(scanner.nextLine().equals("exit")){
+            disconnect();
+        }
     }
 
     public static void updateCommands(){

@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="Updated gitignore">
+    <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="Some work on waifu thingy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Games/WaifuCollection/MainWaifu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Games/WaifuCollection/MainWaifu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseStuff/DBManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ObedientBoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainStuff/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,24 +50,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Bot">
     <configuration name="Bot" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="mainStuff.Bot" />
@@ -192,6 +191,7 @@
     <MESSAGE value="Added waifu game" />
     <MESSAGE value="Added waifu game and access groups" />
     <MESSAGE value="Updated gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore" />
+    <MESSAGE value="Some work on waifu thingy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some work on waifu thingy" />
   </component>
 </project>

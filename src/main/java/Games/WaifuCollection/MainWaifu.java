@@ -10,7 +10,7 @@ public class MainWaifu extends ListenerAdapter {
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
         if (event.getName().equals("addcustomwaifu")){
-            boolean allowed = checkRoleAccess(event.getMember().getRoles(), 1);
+            boolean allowed = checkRoleAccess(Objects.requireNonNull(event.getMember()).getRoles(), 1);
             if(!allowed) {
                 event.reply("You do not have permission to do this!").queue();
             }else {
@@ -27,7 +27,7 @@ public class MainWaifu extends ListenerAdapter {
                 }
             }
         }else if (event.getName().equals("showwaifu")){
-            if(checkRoleAccess(event.getMember().getRoles(),1)){
+            if(checkRoleAccess(Objects.requireNonNull(event.getMember()).getRoles(),1)){
                 if (event.getOption("name") == null) {
                     event.reply("Please provide a name!").setEphemeral(true).queue();
                 } else {
@@ -46,6 +46,22 @@ public class MainWaifu extends ListenerAdapter {
         }else if(event.getName().equals("mywaifus")){
             event.reply("//TODO").queue();
             //TODO: Add my waifus
+        }else if(event.getName().equals("removewaifu")){
+            if(checkRoleAccess(Objects.requireNonNull(event.getMember()).getRoles(),1)) {
+                if (event.getOption("name") == null) {
+                    event.reply("Please provide a name!").setEphemeral(true).queue();
+                } else {
+                    String name = Objects.requireNonNull(event.getOption("name")).getAsString();
+                    name = name.toLowerCase().strip();
+                    DBWaif waifu = getWaifuByName(name);
+                    if (waifu == null) {
+                        event.reply("This waifu does not exist!").setEphemeral(true).queue();
+                    } else {
+                        removeWaifu(waifu.name);
+                        event.reply("Removed " + waifu.name + " from the database!").queue();
+                    }
+                }
+            }
         }
     }
 

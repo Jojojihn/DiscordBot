@@ -19,10 +19,11 @@ public class DBManager {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        sendSQL("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, nickname TEXT, currency INTEGER)");
-        sendSQL("CREATE TABLE IF NOT EXISTS shop (id INTEGER PRIMARY KEY, name TEXT, description TEXT, price INTEGER, image TEXT)");
-        sendSQL("CREATE TABLE IF NOT EXISTS waifus (name TEXT, description TEXT, rarity TEXT, price INTEGER, image TEXT)");
-        sendSQL("CREATE TABLE IF NOT EXISTS roles (id INTEGER PRIMARY KEY, access INTEGER)");
+        sendSQL("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, nickname TEXT, currency INTEGER)");//Users table
+        sendSQL("CREATE TABLE IF NOT EXISTS shop (id INTEGER PRIMARY KEY, name TEXT, description TEXT, price INTEGER, image TEXT)");//shop items //TODO
+        sendSQL("CREATE TABLE IF NOT EXISTS waifus (name TEXT, description TEXT, rarity TEXT, price INTEGER, image TEXT)");//Waifu table, which ones exist
+        sendSQL("CREATE TABLE IF NOT EXISTS roles (id INTEGER PRIMARY KEY, access INTEGER)");//Table for role access groups //TODO Maybe make it not limit bot to one server??
+        sendSQL("CREATE TABLE IF NOT EXISTS ownedwaifus (userid INTEGER, waifuname STRING)");
     }
 
     public static void sendSQL(String sql){

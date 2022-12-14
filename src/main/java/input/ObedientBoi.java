@@ -1,7 +1,6 @@
 package input;
 
 import databaseStuff.DBRole;
-import databaseStuff.DBWaif;
 import databaseStuff.DCUser;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -77,20 +76,6 @@ public class ObedientBoi extends ListenerAdapter {
                     default -> event.reply("This access group does not exist!").setEphemeral(true).queue();
                 }
                 event.reply("Added " + role + " to the database!").queue();
-            }
-        }else if(event.getName().equals("removewaifu")){
-            if(event.getOption("name") == null){
-                event.reply("Please provide a name!").setEphemeral(true).queue();
-            }else{
-                String name = Objects.requireNonNull(event.getOption("name")).getAsString();
-                name = name.toLowerCase().strip();
-                DBWaif waifu = getWaifuByName(name);
-                if (waifu == null){
-                    event.reply("This waifu does not exist!").setEphemeral(true).queue();
-                }else{
-                    removeWaifu(waifu.name);
-                    event.reply("Removed " + waifu.name + " from the database!").queue();
-                }
             }
         }
     }
