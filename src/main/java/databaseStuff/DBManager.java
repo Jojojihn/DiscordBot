@@ -1,6 +1,9 @@
 package databaseStuff;
 
+import net.dv8tion.jda.api.entities.Role;
+
 import java.sql.*;
+import java.util.List;
 
 public class DBManager {
     static Connection conn = null;
@@ -114,6 +117,20 @@ public class DBManager {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static boolean checkRoleAccess(List<Role> roles, int access){
+        boolean hasAccess = false;
+        for(Role r: roles) {
+            String id = r.getId();
+            DBRole dbRole = getRoleByID(id);
+            if (dbRole != null) {
+                if (dbRole.access == access || dbRole.access == 4) {
+                    hasAccess = true;
+                }
+            }
+        }
+        return hasAccess;
     }
 
 }

@@ -3,7 +3,6 @@ package input;
 import databaseStuff.DBRole;
 import databaseStuff.DBWaif;
 import databaseStuff.DCUser;
-import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.components.buttons.Button;
@@ -15,9 +14,7 @@ import static vcStuff.GoodGirl.connectToVC;
 public class ObedientBoi extends ListenerAdapter {
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
-        if (event.getName().equals("ping")) {
-            event.reply("Pong!").queue();
-        } else if (event.getName().equals("help")) {
+        if (event.getName().equals("help")) {
             if (Objects.requireNonNull(event.getMember()).getEffectiveName().equals("Big Boy")) {
                 event.reply("I'll do my best to help Small Boy :)").queue();
             } else {
@@ -61,45 +58,6 @@ public class ObedientBoi extends ListenerAdapter {
                     String nick = dcu.nickname;
                     int currency = dcu.currency;
                     event.reply(nick + " has " + currency + " OwO's").queue();
-                }
-            }
-        }else if (event.getName().equals("addcustomwaifu")){
-            boolean allowed = false;
-            for(Role r: event.getMember().getRoles()) {
-                String id = r.getId();
-                DBRole dbRole = getRoleByID(id);
-                if (dbRole != null) {
-                    if (dbRole.access == 1 || dbRole.access == 4) {
-                        allowed = true;
-                    }
-                }
-            }
-            if(!allowed) {
-                event.reply("You do not have permission to do this!").queue();
-            }else {
-                if (event.getOption("name") == null || event.getOption("description") == null || event.getOption("rarity") == null || event.getOption("price") == null || event.getOption("image") == null) {
-                    event.reply("Please provide all the required arguments!").setEphemeral(true).queue();
-                } else {
-                    String name = Objects.requireNonNull(event.getOption("name")).getAsString();
-                    String description = Objects.requireNonNull(event.getOption("description")).getAsString();
-                    int rarity = Objects.requireNonNull(event.getOption("rarity")).getAsInt();
-                    int price = Objects.requireNonNull(event.getOption("price")).getAsInt();
-                    String image = Objects.requireNonNull(event.getOption("image")).getAsString();
-                    addWaifu(new DBWaif(name, description, rarity, price, image));
-                    event.reply("Added " + name + " to the database!").queue();
-                }
-            }
-        }else if (event.getName().equals("showwaifu")){
-            if (event.getOption("name") == null){
-                event.reply("Please provide a name!").setEphemeral(true).queue();
-            }else{
-                String name = Objects.requireNonNull(event.getOption("name")).getAsString();
-                name = name.toLowerCase().strip();
-                DBWaif waifu = getWaifuByName(name);
-                if (waifu == null){
-                    event.reply("This waifu does not exist!").setEphemeral(true).queue();
-                }else{
-                    event.reply(waifu.name + " is a " + waifu.rarity + " star waifu with the description: " + waifu.description + " and the image: " + waifu.image).queue();
                 }
             }
         }else if (event.getName().equals("showaccessgroups")){

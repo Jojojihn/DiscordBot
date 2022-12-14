@@ -33,6 +33,7 @@ public class Bot {
                 .addEventListeners(new ListeningBoi())
                 .addEventListeners(new ObedientBoi())
                 .addEventListeners(new ButtonBoi())
+                .addEventListeners(new Games.WaifuCollection.MainWaifu())
                 .build();
         Presence presence = bot.getPresence();
         presence.setActivity(Activity.listening("to your commands"));
@@ -51,7 +52,6 @@ public class Bot {
     public static void updateCommands(){
         for(Guild guild : bot.getGuilds()){
             guild.updateCommands().addCommands(
-                    Commands.slash("ping", "Pong"),
                     Commands.slash("help", "I'll do my best to help :)"),
                     Commands.slash("gayporn", "It's a secret"),
                     Commands.slash("callme", "Tell me how to talk to you"),
