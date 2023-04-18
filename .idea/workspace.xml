@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="Added waifu game and access groups">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2008e4e9-f775-4c31-801e-16d14323a5a8" name="Changes" comment="Removed commands with @bot_name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commandStuff/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commandStuff/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/input/ListeningBoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ListeningBoi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="waifugame" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -42,19 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Bot">
     <configuration name="Bot" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="mainStuff.Bot" />
@@ -82,6 +94,12 @@
       <workItem from="1670261930776" duration="35000" />
       <workItem from="1670262131664" duration="207000" />
       <workItem from="1670288392727" duration="415000" />
+      <workItem from="1671457547133" duration="1541000" />
+      <workItem from="1672162357471" duration="1000" />
+      <workItem from="1673866454335" duration="194000" />
+      <workItem from="1673866725676" duration="401000" />
+      <workItem from="1674724440564" duration="2000" />
+      <workItem from="1679661074870" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1670262333704</created>
@@ -132,7 +150,35 @@
       <option name="project" value="LOCAL" />
       <updated>1671025830274</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated gitignore">
+      <created>1671026148354</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671026148354</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated gitignore">
+      <created>1671026178515</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671026178515</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated gitignore">
+      <created>1671026207865</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671026207865</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Moved waifu commands out of ObedientBoi.java into MainWaifu.java">
+      <created>1671027498327</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671027498328</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +202,9 @@
     <MESSAGE value="Another go at the website" />
     <MESSAGE value="Added waifu game" />
     <MESSAGE value="Added waifu game and access groups" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added waifu game and access groups" />
+    <MESSAGE value="Updated gitignore" />
+    <MESSAGE value="Moved waifu commands out of ObedientBoi.java into MainWaifu.java" />
+    <MESSAGE value="Removed commands with @bot_name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed commands with @bot_name" />
   </component>
 </project>

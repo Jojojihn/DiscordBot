@@ -1,6 +1,5 @@
 package input;
 
-import commandStuff.CommandManager;
 import databaseStuff.DCUser;
 import mainStuff.Bot;
 import net.dv8tion.jda.api.entities.Message;
@@ -15,18 +14,10 @@ public class ListeningBoi extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         Message message = event.getMessage();
-        String content = message.getContentRaw();
         SlayingBoi slayboi = new SlayingBoi();
         if(slayboi.slay(message)){
             slayCounter+=1;
             Bot.updateStatus("Slay Counter: " + slayCounter);
-        }
-        if (message.getMentions().isMentioned(event.getJDA().getSelfUser())) {
-            message.addReaction(Emoji.fromUnicode("U+1F440")).queue();
-            String[] args = content.split(" ");
-            if (args.length > 1) {
-                CommandManager.manageCommand(args, event);
-            }
         }
         if(message.toString().toLowerCase().replace('o','u').contains("uwu")){
             DCUser dcu = getUserByID(message.getAuthor().getId());
