@@ -11,10 +11,14 @@ import static databaseStuff.DBManager.*;
 
 public class ListeningBoi extends ListenerAdapter {
     int slayCounter = 0;
+    SlayingBoi slayboi;
+
+    public ListeningBoi() {
+        this.slayboi = new SlayingBoi();
+    }
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         Message message = event.getMessage();
-        SlayingBoi slayboi = new SlayingBoi();
         if(slayboi.slay(message)){
             slayCounter+=1;
             Bot.updateStatus("Slay Counter: " + slayCounter);
