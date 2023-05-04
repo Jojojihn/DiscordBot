@@ -65,7 +65,7 @@ public class ObedientBoi extends ListenerAdapter {
             }
         }else if (event.getName().equals("addcustomwaifu")){
             boolean allowed = false;
-            for(Role r: event.getMember().getRoles()) {
+            for(Role r: Objects.requireNonNull(event.getMember()).getRoles()) {
                 String id = r.getId();
                 DBRole dbRole = getRoleByID(id);
                 if (dbRole != null) {

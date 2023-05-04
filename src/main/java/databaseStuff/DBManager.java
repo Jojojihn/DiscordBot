@@ -47,8 +47,8 @@ public class DBManager {
     }
 
     public static DCUser getUserByID(String ID){
-        ResultSet rs = sendSQLwithResult("SELECT * FROM users WHERE id = " + ID);
         try {
+            ResultSet rs = sendSQLwithResult("SELECT * FROM users WHERE id = " + ID);
             if(rs.next()){
                 return new DCUser(rs.getString("id"), rs.getString("name"), rs.getString("nickname"), rs.getInt("currency"));
             }else{
@@ -83,8 +83,8 @@ public class DBManager {
     }
 
     public static DBWaif getWaifuByName(String name){
-        ResultSet rs = sendSQLwithResult("SELECT * FROM waifus WHERE name = '" + name + "'");
         try {
+            ResultSet rs = sendSQLwithResult("SELECT * FROM waifus WHERE name = '" + name + "'");
             if(rs.next()){
                 return new DBWaif(rs.getString("name"), rs.getString("description"), rs.getInt("rarity"), rs.getInt("price"), rs.getString("image"));
             }else{
@@ -104,8 +104,8 @@ public class DBManager {
     }
 
     public static DBRole getRoleByID(String ID){
-        ResultSet rs = sendSQLwithResult("SELECT * FROM roles WHERE id = " + ID);
         try {
+            ResultSet rs = sendSQLwithResult("SELECT * FROM roles WHERE id = " + ID);
             if(rs.next()){
                 return new DBRole(rs.getString("id"), rs.getInt("access"));
             }else{
