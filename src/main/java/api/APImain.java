@@ -8,6 +8,5 @@ public class APImain extends Thread{
 
     public void run(){
         System.out.println("Started the API");
-
     }
 }
